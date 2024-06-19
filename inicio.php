@@ -10,7 +10,7 @@
     <!--Header-->
     <div class="header">
         <div>
-            <img src="images/logo.png">
+            <img src="images/logo_letra.png">
             <img src="images/usuario_default.png">
         </div>
     </div>

@@ -68,11 +68,15 @@ body {
 }
 
 .header img {
-    max-width: 7vw;
-    height: auto;
+    max-width: auto;
+    height: 7vw;
     padding-right: 15px;
     padding-left: 15px;
     transition: transform 0.3s ease;
+}
+
+.logo {
+    max-width: 100vw;
 }
 
 .header img:hover {
