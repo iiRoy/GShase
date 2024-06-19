@@ -68,7 +68,7 @@ body {
 }
 
 .header img {
-    max-width: 80px;
+    max-width: 7vw;
     height: auto;
     padding-right: 15px;
     padding-left: 15px;
@@ -132,10 +132,11 @@ body.index {
     display: flex;
     flex-direction: column; /* Alinea los hijos en columna */
     align-items: center;
-    padding: 3.5vw 0 9.5vw 0;
+    padding: 3.5vw 0 0;
     box-sizing: border-box;
     margin: 0;
     position: relative; /* Necesario para el posicionamiento absoluto de los hijos */
+    min-height: 55vh; /* Asegura que ocupe al menos el 100% de la altura del viewport */
 }
 
 .buscador h1 {
@@ -152,7 +153,6 @@ body.index {
     padding: 1vw;
     border-radius: 0.5vw; /* Borde redondeado */
     box-shadow: inset 0px 0px 5px #000000; /* Sombra interior */
-    flex-grow: 1; /* Permite que la barra de búsqueda crezca para llenar el espacio disponible */
     max-width: 800px; /* Añade un tamaño máximo para la barra de búsqueda */
     position: relative; /* Necesario para el posicionamiento absoluto de la imagen */
 }
@@ -169,16 +169,17 @@ body.index {
     padding: 0.5vw; /* Opcional: agregar un padding para la imagen */
 }
 
+
 .barra_busqueda input {
     background: none;
-    margin: 0 3vw 0 3vw;
+    margin: 0 3vw 0 6vw;
     border: none;
     color: white;
     font-size: 4vw;
     outline: none;
-    width: 100%; /* Asegura que el input ocupe todo el ancho disponible */
+    width: auto; /* Permite que el input tenga un tamaño fijo */
     text-align: center; /* Centra el texto del input */
-    padding-left: 6vw; /* Añade padding izquierdo para evitar que el texto se superponga con la imagen */
+    padding: 0.5vw 1vw; /* Añade padding */
 }
 
 .barra_busqueda input::placeholder { /* Edge 12-18 */
