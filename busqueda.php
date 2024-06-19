@@ -116,7 +116,7 @@
                         $pdo = Database::connect();
                         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-                        $sql = "SELECT a.Nombre, a.Apellidos, a.Especializacion, b.Titulo FROM Autor a JOIN Biblioteca b ON a.idAutor = b.idAutor";
+                        $sql = "SELECT a.Nombre, a.Apellidos, a.Especializacion, b.idDocumento, b.Titulo FROM Autor a JOIN Biblioteca b ON a.idAutor = b.idAutor";
                         $conditions = [];
                         $params = [];
 
@@ -177,6 +177,7 @@
                                                         <div class="info">
                                                             <div class="title">' . htmlspecialchars($row['Titulo']) . '</div>
                                                             <div class="name">' . htmlspecialchars($row['Nombre']) . ' ' . htmlspecialchars($row['Apellidos']) . ' / ' . htmlspecialchars($row['Especializacion']) . '</div>
+                                                            <a href="visualizacion.php?id=' . htmlspecialchars($row['idDocumento']) . '" class="button">Ver documento</a>
                                                         </div>
                                                     </td>
                                                 </tr>
