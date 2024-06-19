@@ -422,7 +422,8 @@ body.access {
     margin-left: -23vw;
 }
 
-.access_keys input{
+.access_keys input,
+.access_keys select{
     margin: 0 -23vw 0 -23vw;
     padding: 1vw 3vw;
     border-radius: 3vw;
@@ -431,7 +432,8 @@ body.access {
     color: white;
 }
 
-.access_keys input::placeholder {
+.access_keys input::placeholder,
+.access_keys select::placeholder {
     color: #7f8fa5;
 }
 
@@ -585,4 +587,14 @@ table {
 
 .scroll-container{
     padding:3vw;
+}
+
+/* Crea un usuario */
+
+.error2 {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin: 0 -23vw 0 -23vw;
+    padding: 1vw 3vw;
 }
