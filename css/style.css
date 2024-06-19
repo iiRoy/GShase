@@ -470,5 +470,87 @@ body.access {
 }
 
 /* Formato Visualizador */
+body.see {
+    font-family: Arial, sans-serif;
+    overflow-y: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+.prev_pdf {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    height: 80vh;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 20px; /* Espacio entre el PDF y la información del autor */
+}
+.prev_pdf embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.author_info {
+    width: 90%;
+    background: #7e7e7e;
+    padding: 1vw 3vw;
+    border-radius: 2vw;
+}
+
+.author_info {
+    padding: 20px;
+    text-align: left;
+
+}
+.author_info table {
+    width: 100%;
+}
+.author_info h4, .author_info h5 {
+    margin: 10px 0;
+}
+.author_info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.contain_info{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.buttons_2 {
+    position: absolute;
+    margin-top: 43vw;
+    margin-left: 2vw;
+}
+
+.buttons_2 button {
+    background: #345B7E;
+    color: white;
+    border: none;
+    padding: 1vw 2vw;
+    cursor: pointer;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+    transition: transform 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 20vw;
+}
+
+.buttons_2 button:hover {
+    background: #556B8E;
+    transform: scale(1.1);
+    opacity: 90%;
+}
 
 

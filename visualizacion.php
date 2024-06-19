@@ -23,106 +23,86 @@
         </div>
     </div>
 
-    <table>
-        <tr>
-            <td>
-                <?php 
-                require 'database/database.php';
+    <div class="container">
+        <div class="prev_pdf">
+            <?php
+            require 'database/database.php';
 
-                if (isset($_GET['id']) && !empty($_GET['id'])) {
-                    $idDocumento = $_GET['id'];
+            if (isset($_GET['id']) && !empty($_GET['id'])) {
+                $idDocumento = $_GET['id'];
 
-                    $pdo = Database::connect();
-                    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $pdo = Database::connect();
+                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-                    // Query to get author details using idDocumento
-                    $sql = "SELECT a.Nombre, a.Apellidos, a.Especializacion, a.nombreInstitucion, b.Titulo, b.idDocumento 
-                            FROM Autor a 
-                            JOIN Biblioteca b ON a.idAutor = b.idAutor 
-                            WHERE b.idDocumento = ?";
-                    $stmt = $pdo->prepare($sql); 
-                    $stmt->execute([$idDocumento]);
-                    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                // Query to get author details using idDocumento
+                $sql = "SELECT a.Nombre, a.Apellidos, a.Especializacion, a.nombreInstitucion, b.Titulo, b.idDocumento 
+                    FROM Autor a 
+                    JOIN Biblioteca b ON a.idAutor = b.idAutor 
+                    WHERE b.idDocumento = ?";
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute([$idDocumento]);
+                $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-                    if (empty($result)) {
-                        echo '<div>
-                                <div>
-                                    <p>No hay información del autor</p>
-                                </div>
-                            </div>';
-                    } else {
-                        echo '
-                            <div>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <h4>Nombre completo del Autor:</h4>
-                                            <div>' . htmlspecialchars($result[0]['Nombre']) . ' ' . htmlspecialchars($result[0]['Apellidos']) . '</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h5>Especializado en:</h5>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div>' . htmlspecialchars($result[0]['Especializacion']) . '</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <br>
-                                            <h5>Institución que lo avala:</h5>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div>' . htmlspecialchars($result[0]['nombreInstitucion']) . '</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <br>
-                                            <h5>Artículos del autor:</h5>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <ul>';
-                                                foreach ($result as $row) {
-                                                    echo '<li>' . htmlspecialchars($row['Titulo']) . '</li>';
-                                                }
-                                            echo '</ul>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>';
-                    }
-
-                    Database::disconnect();
+                if (!empty($result)) {
+                    echo '<embed src="viewpdf.php?id=' . htmlspecialchars($idDocumento) . '#zoom=70" type="application/pdf">';
                 } else {
-                    echo '<div>
-                            <div>
-                                <p>Documento no especificado.</p>
-                            </div>
-                          </div>';
+                    echo '<p>No hay información del autor</p>';
+                }
+
+                Database::disconnect();
+            } else {
+                echo '<p>Documento no especificado.</p>';
+            }
+            ?>
+        </div>
+
+        <div class="contain_info">
+            <div class="author_info">
+                <?php
+                if (!empty($result)) {
+                    echo '
+            <table>
+                <tr>
+                    <td>
+                        <h4>Nombre completo del Autor:</h4>
+                        <div>' . htmlspecialchars($result[0]['Nombre']) . ' ' . htmlspecialchars($result[0]['Apellidos']) . '</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Especializado en:</h5>
+                        <div>' . htmlspecialchars($result[0]['Especializacion']) . '</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Institución que lo avala:</h5>
+                        <div>' . htmlspecialchars($result[0]['nombreInstitucion']) . '</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Artículos del autor:</h5>
+                        <ul>';
+                    foreach ($result as $row) {
+                        echo '<li>' . htmlspecialchars($row['Titulo']) . '</li>';
+                    }
+                    echo '</ul>
+                    </td>
+                </tr>
+            </table>';
                 }
                 ?>
-            </td>
-            <td>
-                <div class="prev_pdf">
-                    <?php
-                    if (!empty($result)) {
-                        echo '<embed src="viewpdf.php?id=' . htmlspecialchars($idDocumento) . '" type="application/pdf">';
-                    }
-                    ?>
                 </div>
-            </td>
-        </tr>
-    </table>
-</div>
+        </div>
+        <div class="buttons_2">
+            <a href="busqueda.php">
+                <button>
+                    <div class="button-circle"></div>
+                    Volver
+                </button>
+            </a>
+        </div>
 <!--Botón de IA fijo-->
 <button class="ia-button" onclick="openChat()">
     <img src="images/logo.png" alt="IA">
