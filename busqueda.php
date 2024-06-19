@@ -6,7 +6,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="busqueda">
+<div class="buscar">
+    <!--Header-->
+    <div class="header">
+        <div>
+            <img src="images/logo_letra.png">
+            <img src="images/usuario_default.png">
+        </div>
+    </div>
     <table>
         <tr>
             <td>
@@ -91,14 +99,6 @@
             </td>
             <td>
                 <table>
-                    <tr>
-                        <td>
-                            <h2>Búsqueda de Artículos:</h2>
-                        </td>
-                        <td class="header">
-                            <img src="images/usuario_default.png">
-                        </td>
-                    </tr>
                     <tr>
                         <td>
                             <form method="GET" action="">
@@ -198,5 +198,6 @@
             </td>
         </tr>
     </table>
+</div>
 </body>
 </html>
