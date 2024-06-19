@@ -1,5 +1,5 @@
 <?php
-require 'database.php'; // Ensure database connection details are included
+require 'database/database.php'; // Ensure database connection details are included
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $id = $_GET['id'];
