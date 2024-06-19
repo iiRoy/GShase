@@ -202,11 +202,11 @@ body.index {
 }
 
 .barra_busqueda img {
-    width: 11vw;
+    width: 13vw;
     height: auto;
     border-radius: 50%;
     position: absolute;
-    left: -3.6vw;
+    left: -5.6vw;
     top: 50%;
     transform: translateY(-50%);
     padding: 0;
