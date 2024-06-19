@@ -98,10 +98,14 @@
         <table>
             <tr>
                 <td>
-                    <form method="GET" action="">
-                        <input type="text" id="search" name="search">
-                        <button type="submit" class="button">Buscar</button>
-                    </form>
+                    <div class="buscar_barra">
+                        <form method="GET" action="">
+                            <input type="text" id="search" name="search">
+                            <button type="submit" class="button">Buscar</button>
+                            <br>
+                            <br>
+                        </form>
+                    </div>
                 </td>
             </tr>
             <tr>
@@ -158,7 +162,7 @@
 
                         if (empty($result)) {
                             echo '<div>
-                                    <div>
+                                    <div class="no-info">
                                         <h2>No hay documentos relacionados.</h2>
                                     </div>
                                   </div>';

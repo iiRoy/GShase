@@ -236,6 +236,16 @@ body.index {
     padding: 0 6vw;
 }
 
+.buscar_barra {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.buscar_barra input {
+
+}
+
 .filters {
     flex: 1;
     margin-right: 20px;
@@ -268,10 +278,19 @@ body.index {
     height: auto;
 }
 
+.no-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 70vw;
+    margin: 2vw 2vw 2vw 0;
+}
+
 .info {
     display: flex;
     flex-direction: column;
     text-align: left;
+    width: 50vw;
     margin: 2vw 2vw 2vw 0;
 }
 
