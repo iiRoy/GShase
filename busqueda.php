@@ -9,7 +9,9 @@
 <!--Header-->
 <div class="header">
     <div>
-        <img src="images/logo_letra.png">
+        <a href="inicio.php">
+            <img src="images/logo_letra.png">
+        </a>
         <img src="images/usuario_default.png">
     </div>
 </div>
