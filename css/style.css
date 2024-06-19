@@ -215,14 +215,14 @@ body.index {
 
 .barra_busqueda input {
     background: none;
-    margin: 0 4vw 0 2vw;
+    margin: 0 0.5vw 0 2vw;
     border: none;
     color: white;
     font-size: 3.2vw;
     outline: none;
     width: auto;
     text-align: center;
-    padding: 0.4vw 1vw;
+    padding: 1.5vw 1vw 0 2vw;
 }
 
 .barra_busqueda input::placeholder {
