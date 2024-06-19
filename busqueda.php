@@ -14,7 +14,7 @@
     </div>
 </div>
 <div class="buscar">
-    <div class="filters">
+    <div>
         <table>
             <tr>
                 <td><br></td>
@@ -26,70 +26,67 @@
                 <td><br></td>
             </tr>
             <tr>
-                <td><p>Filtros y Etiquetas</p></td>
-            </tr>
-            <tr>
-                <td><br></td>
-            </tr>
-            <tr>
                 <td>
-                    <form method="GET" action="">
-                        <table>
-                            <tr>
-                                <td>
-                                    <label for="autor">Autor:</label><br>
-                                    <input type="text" id="autor" name="autor">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><br></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="publishYear">Año de publicación:</label><br>
-                                    <input type="number" min="1900" max="2024" id="publishYear" name="publishYear">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><br></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="timeFilter">Antes de</label>
-                                    <input type="radio" name="timeFilter" value="before">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="timeFilter">Durante</label>
-                                    <input type="radio" name="timeFilter" value="during">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="timeFilter">Después de</label>
-                                    <input type="radio" name="timeFilter" value="after">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><br></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="exclude">Excluir:</label><br>
-                                    <input type="text" id="exclude" name="exclude">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><br></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <button type="submit" class="button">Aplicar filtros</button>
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
+                    <div class="filters">
+                        <h1>Filtros y Etiquetas</h1>
+                        <form method="GET" action="">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="autor">Autor:</label><br>
+                                        <input type="text" id="autor" name="autor">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><br></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="publishYear">Año de publicación:</label><br>
+                                        <input type="number" min="1900" max="2024" id="publishYear" name="publishYear">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><br></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="timeFilter">Antes de</label>
+                                        <input type="radio" name="timeFilter" value="before">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="timeFilter">Durante</label>
+                                        <input type="radio" name="timeFilter" value="during">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="timeFilter">Después de</label>
+                                        <input type="radio" name="timeFilter" value="after">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><br></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="exclude">Excluir:</label><br>
+                                        <input type="text" id="exclude" name="exclude">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><br></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="submit" class="button">Aplicar filtros</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
                 </td>
             </tr>
         </table>
@@ -111,6 +108,7 @@
             <tr>
                 <td>
                     <div>
+                        <h1>Resultados de Búsqueda:</h1>
                         <?php
                         require 'database/database.php';
                         $pdo = Database::connect();
@@ -173,11 +171,11 @@
                                             <table>
                                                 <tr>
                                                     <td class="documents">
+                                                        <a href="visualizacion.php?id=' . htmlspecialchars($row['idDocumento']) . '" style="text-decoration: none; color: inherit; display: flex; align-items: center;"</a>
                                                         <img src="images/usuario_default.png" alt="Imagen usuario" class="user-img">
                                                         <div class="info">
                                                             <div class="title">' . htmlspecialchars($row['Titulo']) . '</div>
                                                             <div class="name">' . htmlspecialchars($row['Nombre']) . ' ' . htmlspecialchars($row['Apellidos']) . ' / ' . htmlspecialchars($row['Especializacion']) . '</div>
-                                                            <a href="visualizacion.php?id=' . htmlspecialchars($row['idDocumento']) . '" class="button">Ver documento</a>
                                                         </div>
                                                     </td>
                                                 </tr>
