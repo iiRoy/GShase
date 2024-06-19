@@ -90,7 +90,8 @@ body {
 
 .ia-button {
     position: fixed;
-    bottom: 60px;
+    z-index:100;
+    bottom: 55px;
     right: 0px;
     background-color: #345B7E;
     color: white;
@@ -106,9 +107,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     padding-left: 0.5vw;
-    padding-right: 0.5vw;
+    padding-right: 4vw;
     text-align: left;
-    padding-right: 3vw;
 }
 
 .ia-button img {
@@ -226,6 +226,20 @@ body.index {
 
 .barra_busqueda input::placeholder {
     color: #7f8fa5;
+}
+
+.barra_busqueda button{
+    background: #1c324e;
+    color: white;
+    border: none;
+    padding: 1vw 0;
+    margin-bottom: 1vw;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+    transition: transform 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 20vw;
 }
 
 /* Configuración Búsqueda */
@@ -414,6 +428,7 @@ body.access {
     border-radius: 3vw;
     border: none;
     background: #284556;
+    color: white;
 }
 
 .access_keys input::placeholder {

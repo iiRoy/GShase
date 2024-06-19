@@ -4,6 +4,7 @@
     <title>GShase: Inicio</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <script src="/scripts/chatbot.js"></script>
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
     <script src="https://mediafiles.botpress.cloud/9ec69e47-15e3-4a90-bb27-6a418d01d343/webchat/config.js" defer></script>
 </head>
@@ -13,8 +14,12 @@
     <!--Header-->
     <div class="header">
         <div>
-            <img src="images/logo_letra.png">
-            <img src="images/usuario_default.png">
+            <a href="inicio.php">
+                <img src="images/logo_letra.png">
+            </a>
+            <a href="access.php">
+                <img src="images/usuario_default.png">
+            </a>
         </div>
     </div>
     <br>
@@ -26,16 +31,20 @@
         <div class="content">
             <h1>¡Te damos la bienvenida a la Difusión de Artículos e Investigaciones de Alto Impacto!</h1>
             <div class="buttons">
+                <a href="access.php">
                 <button>
                     <div class="button-circle"></div>
                     Iniciar sesión
                 </button>
+                </a>
             </div>
             <div class="buttons">
+                <a href="create.php">
                 <button>
                     <div class="button-circle"></div>
                     ¡Regístrate!
                 </button>
+                </a>
             </div>
         </div>
         <div class="content">
@@ -56,12 +65,10 @@
         </div>
     </div>
 </div>
-<!--
-Botón de IA fijo
-<button class="ia-button">
+<!--Botón de IA fijo-->
+<button class="ia-button" onclick="openChat()">
     <img src="images/logo.png" alt="IA">
     ¡Chatea conmigo!
 </button>
--->
 </body>
 </html>
