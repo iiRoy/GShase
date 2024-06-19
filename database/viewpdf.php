@@ -12,11 +12,15 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     $stmt->execute([$id]);
     $pdf = $stmt->fetchColumn();
 
-    header('Content-type: application/pdf');
-    echo $pdf;
+    if ($pdf) {
+        header('Content-Type: application/pdf');
+        echo $pdf;
+    } else {
+        echo 'No se pudo encontrar el PDF';
+    }
 
     Database::disconnect();
 } else {
-    echo 'No se encontró el PDF';
+    echo 'ID de documento inválida.';
 }
 ?>
