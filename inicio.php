@@ -46,7 +46,10 @@
     <div class="buscador"> <h1>Buscador</h1>
         <div class="barra_busqueda">
             <img src="images/logo.png" alt="Example Image">
-            <input type="text" placeholder="¿En qué te puedo ayudar?">
+            <form method="GET" action="busqueda.php">
+                <input type="text" id="search" name="search" placeholder="¿En qué te puedo ayudar?">
+                <button type="submit" class="button">Buscar</button>
+            </form>
         </div>
     </div>
 </div>
