@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Topos: Administrador</title>
+    <title>GShase: Inicio</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -45,5 +45,12 @@
         </div>
     </div>
 </div>
+<!--
+Botón de IA fijo
+<button class="ia-button">
+    <img src="images/logo.png" alt="IA">
+    ¡Chatea conmigo!
+</button>
+-->
 </body>
 </html>
