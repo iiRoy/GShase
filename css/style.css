@@ -60,6 +60,9 @@ body {
 /* Configuración Header */
 .header {
     width: 100%;
+    background: linear-gradient(to bottom, grey, #232323);
+    padding-bottom: 3vw;
+    padding-top: 1vw;
 }
 
 .header div {
@@ -69,7 +72,7 @@ body {
 
 .header img {
     width: auto;
-    max-height: 7vw;
+    max-height: 6vw;
     padding-right: 15px;
     padding-left: 15px;
     transition: transform 0.3s ease;
@@ -129,7 +132,6 @@ body.index {
 
 .inicio {
     width: 100%;
-    padding: 15px;
 }
 
 .welcome-container {
@@ -173,11 +175,11 @@ body.index {
     display: flex;
     flex-direction: column; /* Alinea los hijos en columna */
     align-items: center;
-    padding: 4vw 0 0;
+    padding: 1.5vw 0 0;
     box-sizing: border-box;
     margin: 0;
     position: relative; /* Necesario para el posicionamiento absoluto de los hijos */
-    min-height: 55vh; /* Asegura que ocupe al menos el 100% de la altura del viewport */
+    min-height: 43vh; /* Asegura que ocupe al menos el 100% de la altura del viewport */
 }
 
 .buscador h1 {
@@ -199,14 +201,13 @@ body.index {
 }
 
 .barra_busqueda img {
-    width: 10vw; /* Ajusta el tamaño según el tamaño del viewport */
+    width: 11vw; /* Ajusta el tamaño según el tamaño del viewport */
     height: auto;
     border-radius: 50%;
     position: absolute;
-    left: -2.5vw; /* Ajusta este valor según sea necesario para posicionar la imagen */
+    left: -3.6vw; /* Ajusta este valor según sea necesario para posicionar la imagen */
     top: 50%;
     transform: translateY(-50%);
-    background: #3e3e3e; /* Opcional: agregar un fondo para la imagen */
     padding: 0.5vw; /* Opcional: agregar un padding para la imagen */
 }
 
@@ -216,7 +217,7 @@ body.index {
     margin: 0 3vw 0 6vw;
     border: none;
     color: white;
-    font-size: 4vw;
+    font-size: 3.2vw;
     outline: none;
     width: auto; /* Permite que el input tenga un tamaño fijo */
     text-align: center; /* Centra el texto del input */
