@@ -553,4 +553,30 @@ body.see {
     opacity: 90%;
 }
 
+.item-container {
+    display: inline-block;
+    min-width: 300px; 
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
 
+.name {
+    font-weight: bold;
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+}
