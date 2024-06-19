@@ -179,7 +179,7 @@ body.index {
     box-sizing: border-box;
     margin: 0;
     position: relative;
-    min-height: 43vh;
+    min-height: 53vh;
 }
 
 .buscador h1 {
@@ -468,4 +468,7 @@ body.access {
     border-radius: 5px;
     margin: 20px;
 }
+
+/* Formato Visualizador */
+
 

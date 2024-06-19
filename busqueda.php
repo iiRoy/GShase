@@ -4,6 +4,7 @@
     <title>Búsqueda de documentos</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <script src="/scripts/chatbot.js"></script>
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
     <script src="https://mediafiles.botpress.cloud/9ec69e47-15e3-4a90-bb27-6a418d01d343/webchat/config.js" defer></script>
 </head>
@@ -203,5 +204,10 @@
         </table>
     </div>
 </div>
+<!--Botón de IA fijo-->
+<button class="ia-button" onclick="openChat()">
+    <img src="images/logo.png" alt="IA">
+    ¡Chatea conmigo!
+</button>
 </body>
 </html>
