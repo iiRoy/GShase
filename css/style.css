@@ -136,7 +136,7 @@ body.index {
     display: flex;
     flex-direction: column; /* Alinea los hijos en columna */
     align-items: center;
-    padding: 3.5vw 0 0;
+    padding: 4vw 0 0;
     box-sizing: border-box;
     margin: 0;
     position: relative; /* Necesario para el posicionamiento absoluto de los hijos */
