@@ -16,7 +16,9 @@
         <a href="inicio.php">
             <img src="images/logo_letra.png">
         </a>
-        <img src="images/usuario_default.png">
+        <a href="access.php">
+            <img src="images/usuario_default.png">
+        </a>
     </div>
 </div>
 <div class="buscar">
