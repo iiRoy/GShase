@@ -4,6 +4,8 @@
     <title>Visualización de documentos</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/9ec69e47-15e3-4a90-bb27-6a418d01d343/webchat/config.js" defer></script>
 </head>
 
 <body>
