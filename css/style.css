@@ -342,3 +342,115 @@ body.index {
     margin-right: 3.2vw;
     padding: 1vw;
 }
+
+/* Configuración Access */
+body.access {
+    margin: 0;
+}
+
+.access_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box_access {
+    background: #C6D3DB;
+    border: 1vw solid #284556;
+    padding: 1vw;
+    color: #0e0e0e;
+    border-radius: 1.3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.top_section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: right;
+    align-items: flex-start;
+}
+
+.top_section h2 {
+    margin-right: 2vw;
+}
+
+.image_box {
+    margin-left: 20px;
+}
+
+.user-img-small {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.access_keys {
+    background: #EAEFF1;
+    border-radius: 1.3vw;
+    display: flex;
+    padding: 2vw 25vw;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.access_keys label {
+    font-size: 2vw;
+    position: relative;
+    text-align: left;
+    margin-left: -23vw;
+}
+
+.access_keys input{
+    margin: 0 -23vw 0 -23vw;
+    padding: 1vw 3vw;
+    border-radius: 3vw;
+    border: none;
+    background: #284556;
+}
+
+.access_keys input::placeholder {
+    color: #7f8fa5;
+}
+
+.access_keys button{
+    padding: 1vw 0 1vw 0;
+    margin: 2vw -20vw 0 -20vw;
+    background: #345B7E;
+    border-radius: 3vw;
+    border: none;
+    color: white;
+}
+
+.access_keys button:hover {
+    background: #556B8E;
+    transform: scale(1.1);
+}
+
+.imagen_navbar img {
+    max-width: 30vw;
+    height: auto;
+}
+
+.access_keys a{
+    padding: 1vw 0 1vw 0;
+    margin: 2vw -20vw 0 -20vw;
+    color: #406667;
+    text-align: center;
+}
+
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
