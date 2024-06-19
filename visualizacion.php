@@ -44,7 +44,7 @@
                 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                 if (!empty($result)) {
-                    echo '<embed src="viewpdf.php?id=' . htmlspecialchars($idDocumento) . '#zoom=70" type="application/pdf">';
+                    echo '<embed src="database/viewpdf.php?id=' . htmlspecialchars($idDocumento) . '#zoom=70" type="application/pdf">';
                 } else {
                     echo '<p>No hay información del autor</p>';
                 }
