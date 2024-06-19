@@ -1,0 +1,124 @@
+/* Configuración General */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #232323;
+    padding: 50px;
+    margin: 0;
+    font-family: Roboto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Configuración Botones */
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    background: #345B7E; /* Color de fondo del botón */
+    color: white;
+    border: none;
+    padding: 1vw 2vw;
+    cursor: pointer;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+    transition: transform 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 15vw;
+}
+
+.button-circle {
+    width: 2.5vw;
+    height: 3.8vw;
+    background-color: #6d7781;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.25vw;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.buttons button:hover {
+    background: #556B8E; /* Color de fondo del botón al hacer hover */
+    transform: scale(1.1); /* Agranda el botón en un 10% */
+}
+
+.button-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Configuración Header */
+.header {
+    width: 100%;
+}
+
+.header div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header img {
+    max-width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.header img:hover {
+    transform: scale(1.1);
+}
+
+/* Configuración Inicio */
+
+body.index {
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.inicio {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1800px;
+    position: relative;
+}
+
+.container img {
+    max-width: 35vw; /* Ajusta el tamaño máximo relativo al viewport */
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-left: -100px;
+    right: -2vw; /* Ajusta este valor para controlar cuánto se sale la imagen de la página */
+}
+
+.content {
+    text-align: right; /* Alinea el texto a la derecha */
+    flex: 1;
+    margin-right: -6vw; /* Ajusta este valor para reducir el espacio entre el contenido y la imagen */
+}
+
+.content h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 4vw;
+    font-family: "Microsoft JhengHei Light";
+    font-weight: bolder;
+}
