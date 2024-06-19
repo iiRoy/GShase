@@ -68,8 +68,8 @@ body {
 }
 
 .header img {
-    max-width: auto;
-    height: 7vw;
+    width: auto;
+    max-height: 7vw;
     padding-right: 15px;
     padding-left: 15px;
     transition: transform 0.3s ease;
