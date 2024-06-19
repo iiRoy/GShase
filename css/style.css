@@ -580,3 +580,9 @@ body.see {
 table {
     width: 100%;
 }
+
+/* Formato Administrador */
+
+.scroll-container{
+    padding:3vw;
+}

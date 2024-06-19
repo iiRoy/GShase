@@ -1,11 +1,9 @@
 <?php
-/*
 session_start();
 if (isset($_SESSION['user_name'])) {
-    header("Location: upload.php");
+    header("Location: adminPagina.php");
     exit();
 }
-*/
 ?>
 <!DOCTYPE html>
 <html>

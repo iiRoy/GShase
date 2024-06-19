@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_name'])) {
+    header("Location: access.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +15,25 @@
 </head>
 
 <body>
+
+<!--Header-->
+<div class="header">
+    <div>
+        <a href="inicio.php">
+            <img src="images/logo_letra.png">
+        </a>
+        <div class="buttons">
+            <a href="database/logout.php">
+                <button>
+                    <div class="button-circle"></div>
+                    Cerrar Sesión
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
 <div class="scroll-container" id="reservations-container">
+    <h1>Documentos Publicados</h1>
     <?php
     require 'database/database.php';
     $pdo = Database::connect();
