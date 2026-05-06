@@ -506,8 +506,35 @@ The chatbot can be opened using the fixed button:
 ¡Chatea conmigo!
 ```
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/813e4fac-9906-4553-a1c1-96d117164e84" alt="GShase homepage preview" width="300" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/77f697e7-1a87-4a2d-9256-fa788d93c547" alt="GShase homepage preview" width="400" />
+</p>
+
 > [!NOTE]
 > The chatbot requires internet access because it loads Botpress scripts from external URLs.
+
+---
+
+## Preview
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/32307aa6-dd66-4174-aee3-0d4235d97248" alt="GShase homepage preview" width="700" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/71e39219-4b2e-443f-ad70-19f3481c65a0" alt="GShase login page preview" width="700" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c3ab1144-fed8-47e1-bd87-050c739c9465" alt="GShase search page with filters and chatbot preview" width="700" />
+</p>
+
+> [!NOTE]
+> These screenshots show the current prototype interface, including the homepage, user access page, search filters, and Botpress chatbot integration.
 
 ---
 
