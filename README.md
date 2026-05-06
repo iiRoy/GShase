@@ -13,6 +13,17 @@ The project includes a public search interface, user access pages, administrator
 
 ---
 
+## Project Status
+
+**GShase** is an academic/hackathon prototype developed for **Hack Puebla 2024**.
+
+The current version includes the main interface, login flow, search filters, database structure, PDF visualization workflow, admin validation concept, and Botpress chatbot integration.
+
+> [!WARNING]
+> This project is not production-ready. Some backend workflows, security practices, database consistency issues, and UI details still need improvement.
+
+---
+
 ## Overview
 
 **GShase** is a web application that helps users search for academic documents by title, author, publication year, and exclusion filters. It also includes an administrator panel where pending documents can be validated or deleted.
@@ -266,7 +277,7 @@ private static $dbUserPassword = 'your_password';
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/GShase.git
+git clone https://github.com/iiRoy/GShase.git
 ```
 
 Move the project folder into your local server directory.
