@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/logo_letra.png" alt="GShase Logo" width="700" />
+  <img src="images/logo_letra.png" alt="GShase Logo" width="400" />
 </p>
 
 # GShase
@@ -52,9 +52,6 @@ The system allows users to:
 - Access an AI assistant.
 - Submit or manage document-related information.
 - Validate pending documents through an admin panel.
-
-> [!NOTE]
-> The homepage presents the project as a platform for the **“Difusión de Artículos e Investigaciones de Alto Impacto.”**
 
 ---
 
@@ -563,56 +560,6 @@ documentacion/mockups/
 
 > [!TIP]
 > These documents are useful for understanding the intended system architecture, database model, UI flow, and design process.
-
----
-
-## Suggested README Demo Section
-
-You can add the included hackathon video to the README like this:
-
-```md
-## Demo
-
-[Watch the demo video](documentacion/Video%20de%20Hackhaton%202.mp4)
-```
-
-Or, if GitHub renders it correctly:
-
-```html
-<p align="center">
-  <video src="documentacion/Video%20de%20Hackhaton%202.mp4" controls width="700">
-    Your browser does not support the video tag.
-  </video>
-</p>
-```
-
-> [!WARNING]
-> Video rendering inside GitHub README files can be inconsistent. A direct link is usually more reliable.
-
----
-
-## Suggested Screenshots Section
-
-You can add screenshots or mockup previews like this if you export mockups as images:
-
-```md
-## Screenshots
-
-<p align="center">
-  <img src="images/logo_letra.png" alt="GShase Logo" width="700" />
-</p>
-```
-
-For PDF mockups, use direct links instead:
-
-```md
-## Mockups
-
-- [Homepage Mockup](documentacion/mockups/inicio.pdf)
-- [Search Mockup](documentacion/mockups/buscar.pdf)
-- [Admin Mockup](documentacion/mockups/Admin.pdf)
-- [Document Visualization Mockup](documentacion/mockups/visualizacion.pdf)
-```
 
 ---
 
