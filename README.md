@@ -851,12 +851,14 @@ Future versions could include:
 
 ## License
 
-This project includes a **CC0 1.0 Universal** license.
+This project is publicly available for educational and portfolio review purposes only.
 
-See the `LICENSE` file for details.
+The source code, visual assets, audio, videos, logos, screenshots, documentation, and other project materials may not be used, copied, modified, redistributed, sublicensed, or used commercially without explicit permission from the project authors.
+
+All rights reserved unless otherwise stated.
 
 > [!IMPORTANT]
-> Even when the repository uses CC0, external services, third-party assets, Botpress configurations, documentation, and institutional content should still be reviewed before reuse or publication.
+> Some third-party assets, music, libraries, or references may be subject to their own licenses. Those materials remain owned by their original creators and are not covered by this project license.
 
 ---
 
