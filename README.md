@@ -2,8 +2,6 @@
   <img src="images/logo_letra.png" alt="GShase Logo" width="400" />
 </p>
 
-# GShase
-
 **GShase** is a PHP and MySQL web platform designed for the search, visualization, publication review, and validation of academic articles and research documents.
 
 The project includes a public search interface, user access pages, administrator tools, PDF document visualization, database integration, and an AI chatbot assistant powered through Botpress.
